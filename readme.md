@@ -2,8 +2,6 @@
 
 Dieses Set aus zwei Skripten liest kontinuierlich den DOCSIS-Status einer Vodafone-Station aus und speichert die Daten in einer csv-Datei ab.
 
-## Die Skripte erzeugen 
-
 **Get-DDOCSIS-Status.js**
 
 Das Skript verwendet Puppeteer, um einen Chrome-Browser im Headless-Modus zu öffnen. Nach dem Login navigiert es automatisch zur DOCSIS-Statusseite. Dort extrahiert das Skript die Inhalte der 'Downstream' und 'Upstream' Tabellen und speichert diese in Form von JSON-Dateien. Dieser Prozess wiederholt sich automatisch alle fünf Sekunden.
